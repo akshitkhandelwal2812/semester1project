@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerCarve - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-top">
+                <div class="user-greeting">
+                    <h2>👋 Good Morning, Alex!</h2>
+                    <p>Ready to advance your career?</p>
+                </div>
+                <div class="notification-bell">
+                    <span class="bell-icon">🔔</span>
+                    <span class="notification-dot"></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Quick Stats Section -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">Sessions This Week</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">4.8⭐</div>
+                    <div class="stat-label">Avg Rating</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">28</div>
+                    <div class="stat-label">Skills Learned</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Action Cards -->
+        <section class="main-actions">
+            <h3>🚀 What would you like to do today?</h3>
+            
+            <div class="action-cards-grid">
+                <div class="action-card primary-card" onclick="goToComingSoon('1-on-1 Mentoring')">
+                    <div class="card-icon">👨‍💼</div>
+                    <div class="card-content">
+                        <h4>1-on-1 Mentoring</h4>
+                        <p>Connect with industry experts</p>
+                    </div>
+                    <div class="card-arrow">→</div>
+                </div>
+
+                <div class="action-card" onclick="goToComingSoon('Mock Interviews')">
+                    <div class="card-icon">🎯</div>
+                    <div class="card-content">
+                        <h4>Mock Interviews</h4>
+                        <p>Practice with real scenarios</p>
+                    </div>
+                    <div class="card-arrow">→</div>
+                </div>
+
+                <div class="action-card" onclick="goToComingSoon('Skill Assessments')">
+                    <div class="card-icon">📊</div>
+                    <div class="card-content">
+                        <h4>Skill Assessments</h4>
+                        <p>Test your knowledge</p>
+                    </div>
+                    <div class="card-arrow">→</div>
+                </div>
+
+                <div class="action-card" onclick="goToComingSoon('Career Roadmaps')">
+                    <div class="card-icon">🗺️</div>
+                    <div class="card-content">
+                        <h4>Career Roadmaps</h4>
+                        <p>Plan your growth path</p>
+                    </div>
+                    <div class="card-arrow">→</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured-section">
+            <h3>✨ Featured This Week</h3>
+            
+            <div class="featured-cards">
+                <div class="featured-card" onclick="goToComingSoon('AI Resume Builder')">
+                    <div class="featured-content">
+                        <div class="featured-badge">🆕 NEW</div>
+                        <h4>AI Resume Builder</h4>
+                        <p>Create ATS-friendly resumes in minutes</p>
+                    </div>
+                    <div class="featured-image">🤖</div>
+                </div>
+
+                <div class="featured-card" onclick="goToComingSoon('Live Workshop')">
+                    <div class="featured-content">
+                        <div class="featured-badge">🔥 HOT</div>
+                        <h4>Live Workshop</h4>
+                        <p>Data Science Career Transition</p>
+                    </div>
+                    <div class="featured-image">📚</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Access Footer -->
+        <footer class="quick-access">
+            <div class="quick-buttons">
+                <button class="quick-btn" onclick="goToComingSoon('Schedule Session')">
+                    <span class="btn-icon">📅</span>
+                    <span>Schedule</span>
+                </button>
+                <button class="quick-btn" onclick="goToComingSoon('Progress')">
+                    <span class="btn-icon">📈</span>
+                    <span>Progress</span>
+                </button>
+                <button class="quick-btn" onclick="goToComingSoon('Messages')">
+                    <span class="btn-icon">💬</span>
+                    <span>Messages</span>
+                </button>
+                <button class="quick-btn" onclick="goToComingSoon('Profile')">
+                    <span class="btn-icon">👤</span>
+                    <span>Profile</span>
+                </button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerCarve - Coming Soon</title>
+    <link rel="stylesheet" href="coming-soon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-container">
+        <!-- Header -->
+        <header class="header">
+            <button class="back-btn" onclick="goBack()">
+                <span class="back-arrow">←</span>
+            </button>
+            <h1 class="header-title">Coming Soon</h1>
+            <div class="header-spacer"></div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="coming-soon-illustration">
+                <div class="rocket">🚀</div>
+                <div class="stars">
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                    <span class="star">⭐</span>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h2 class="feature-title" id="featureTitle">Feature Coming Soon</h2>
+                <p class="feature-description">
+                    We're working hard to bring you this amazing feature! 
+                    Stay tuned for updates and be the first to know when it's ready.
+                </p>
+
+                <div class="progress-info">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                    <p class="progress-text">Development in progress...</p>
+                </div>
+
+                <div class="notification-signup">
+                    <h3>Get Notified</h3>
+                    <p>Be the first to know when this feature launches!</p>
+                    
+                    <div class="email-input-group">
+                        <input type="email" class="email-input" placeholder="Enter your email" value="alex@example.com">
+                        <button class="notify-btn" onclick="subscribeToNotifications()">
+                            <span class="notify-icon">🔔</span>
+                            Notify Me
+                        </button>
+                    </div>
+                </div>
+
+                <div class="related-features">
+                    <h3>✨ In the Meantime</h3>
+                    <div class="related-cards">
+                        <div class="related-card" onclick="goBack()">
+                            <span class="related-icon">🏠</span>
+                            <span class="related-text">Explore Home</span>
+                        </div>
+                        <div class="related-card" onclick="showFeedback()">
+                            <span class="related-icon">💬</span>
+                            <span class="related-text">Send Feedback</span>
+                        </div>
+                        <div class="related-card" onclick="sharePage()">
+                            <span class="related-icon">📱</span>
+                            <span class="related-text">Share App</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom Actions -->
+        <footer class="bottom-actions">
+            <button class="action-btn secondary" onclick="goBack()">
+                <span class="btn-icon">🏠</span>
+                Back to Home
+            </button>
+            <button class="action-btn primary" onclick="showRoadmap()">
+                <span class="btn-icon">🗺️</span>
+                View Roadmap
+            </button>
+        </footer>
+    </div>
+
+    <!-- Success Toast -->
+    <div class="toast" id="successToast">
+        <div class="toast-content">
+            <span class="toast-icon">✅</span>
+            <span class="toast-message">Thanks! We'll notify you when it's ready.</span>
+        </div>
+    </div>
+
+    <script src="coming-soon.js"></script>
+</body>
+</html>
